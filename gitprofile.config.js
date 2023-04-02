@@ -3,8 +3,8 @@
 const config = {
   github: {
     username: 'HiIAmTzeKean', // Your GitHub org/user name. (Required)
-    sortBy: 'stars', // stars | updated
-    limit: 10, // How many projects to display.
+    sortBy: 'updated', // stars | updated
+    limit: 5, // How many projects to display.
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
       projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
@@ -76,30 +76,29 @@ const config = {
       from: '2017',
       to: '2018',
     },
+    {
+      institution: 'Fuhua Secondary School',
+      degree: 'O-Level',
+      from: '2013',
+      to: '2016',
+    },
   ],
 
   // To hide the `My Projects` section, keep it empty.
   externalProjects: [
-    {
+    /* {
       title: 'Project Name',
       description:
         'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
       imageUrl: 'https://via.placeholder.com/250x250',
       link: 'https://example.com',
-    },
-    {
-      title: 'Project Name',
-      description:
-        'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-      imageUrl: 'https://via.placeholder.com/250x250',
-      link: 'https://example.com',
-    },
+    */},
   ],
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
     source: 'dev', // medium | dev
-    username: 'arifszn', // to hide blog section, keep it empty
-    limit: 2, // How many posts to display. Max is 10.
+    username: '', // to hide blog section, keep it empty
+    limit: 0, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
