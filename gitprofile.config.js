@@ -37,6 +37,7 @@ const config = {
     'Java',
     'PostgreSQL',
     'Git',
+    'Github'
   ],
   experiences: [
     {
