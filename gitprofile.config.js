@@ -18,7 +18,7 @@ const config = {
     instagram: 'ngtzekean',
     dribbble: '',
     behance: '',
-    medium: '',
+    medium: 'ngtzekean',
     dev: '',
     stackoverflow: '', // format: userid/username
     skype: '',
@@ -97,15 +97,15 @@ const config = {
   // Display blog posts from your medium or dev account. (Optional)
   blog: {
     source: 'medium', // medium | dev
-    username: '', // to hide blog section, keep it empty
-    limit: 0, // How many posts to display. Max is 10.
+    username: 'ngtzekean', // to hide blog section, keep it empty
+    limit: 5, // How many posts to display. Max is 10.
   },
   googleAnalytics: {
     id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
   },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
-    id: 'ngtzekean',
+    id: '',
     snippetVersion: 6,
   },
   themeConfig: {
