@@ -41,6 +41,20 @@ const config = {
   ],
   experiences: [
     {
+      company: 'ADDX',
+      position: 'Data Analyst Intern',
+      from: 'Jun 2023',
+      to: 'Dec 2023',
+      companyLink: 'https://addx.co',
+    },
+    {
+      company: 'Wiz.AI',
+      position: 'Finance Intern',
+      from: 'May 2023',
+      to: 'Jun 2023',
+      companyLink: 'https://www.wiz.ai',
+    },
+    {
       company: 'Nanyang Technological University Singapore',
       position: 'URECA',
       from: 'August 2022',
@@ -69,6 +83,12 @@ const config = {
       degree: 'Degree',
       from: '2021',
       to: '2025',
+    },
+    {
+      institution: 'National University Singapore',
+      degree: 'Non-Graduating student',
+      from: '2023',
+      to: '2023',
     },
     {
       institution: 'Pioneer Junior College',
