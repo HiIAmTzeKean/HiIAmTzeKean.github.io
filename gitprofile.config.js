@@ -4,7 +4,7 @@ const config = {
   github: {
     username: 'HiIAmTzeKean', // Your GitHub org/user name. (Required)
     sortBy: 'updated', // stars | updated
-    limit: 5, // How many projects to display.
+    limit: 4, // How many projects to display.
     exclude: {
       forks: false, // Forked projects will not be displayed if set to true.
       projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
@@ -25,7 +25,7 @@ const config = {
     telegram: 'ngtzekean',
     website: '',
     phone: '',
-    email: 'ngtzekean600@gmail.com',
+    email: 'ngtzekean@gmail.com',
   },
   resume: {
     fileUrl:
@@ -35,9 +35,8 @@ const config = {
     'Python',
     'C',
     'Java',
-    'PostgreSQL',
-    'Git',
-    'Github'
+    'SQL',
+    'Git'
   ],
   experiences: [
     {
@@ -85,6 +84,12 @@ const config = {
       to: '2025',
     },
     {
+      institution: 'Tsinghua University',
+      degree: 'Non-Graduating student',
+      from: '2023',
+      to: '2023',
+    },
+    {
       institution: 'National University Singapore',
       degree: 'Non-Graduating student',
       from: '2023',
@@ -95,13 +100,7 @@ const config = {
       degree: 'A-Level',
       from: '2017',
       to: '2018',
-    },
-    {
-      institution: 'Fuhua Secondary School',
-      degree: 'O-Level',
-      from: '2013',
-      to: '2016',
-    },
+    }
   ],
 
   // To hide the `My Projects` section, keep it empty.
@@ -189,11 +188,7 @@ const config = {
   },
 
   // Optional Footer. Supports plain text or HTML.
-  footer: `Made with <a 
-      class="text-primary" href="https://github.com/arifszn/gitprofile"
-      target="_blank"
-      rel="noreferrer"
-    >GitProfile</a> and ❤️`,
+  footer: ``,
 };
 
 export default config;
