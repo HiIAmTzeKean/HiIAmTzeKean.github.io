@@ -8,6 +8,7 @@ import Details from './details';
 import Skill from './skill';
 import Experience from './experience';
 import Certification from './certification';
+import Achievement from './achievement';
 import Education from './education';
 import Project from './project';
 import Blog from './blog';
@@ -197,6 +198,10 @@ const GitProfile = ({ config }) => {
                   </div>
                   <div className="lg:col-span-2 col-span-1">
                     <div className="grid grid-cols-1 gap-6">
+                      <Achievement
+                        loading={loading}
+                        achievement={sanitizedConfig.achievement}
+                      />
                       <Project
                         repo={repo}
                         loading={loading}

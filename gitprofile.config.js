@@ -31,13 +31,7 @@ const config = {
     fileUrl:
       'https://github.com/HiIAmTzeKean/HiIAmTzeKean/blob/Master/Resume%20Tze%20Kean.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
-  skills: [
-    'Python',
-    'C',
-    'Java',
-    'SQL',
-    'Git'
-  ],
+  skills: ['Python', 'C', 'Java', 'SQL', 'Git'],
   experiences: [
     {
       company: 'ADDX',
@@ -73,7 +67,7 @@ const config = {
       name: 'Google Data Analytics',
       body: 'Those who earn the Google Data Analytics Professional Certificate have completed eight courses, developed by Google.',
       year: 'Jan 2023',
-      link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/PQZFFXUZW6GZ'
+      link: 'https://www.coursera.org/account/accomplishments/specialization/certificate/PQZFFXUZW6GZ',
     },
   ],
   education: [
@@ -100,9 +94,45 @@ const config = {
       degree: 'A-Level',
       from: '2017',
       to: '2018',
-    }
+    },
   ],
-
+  achievement: [
+    {
+      year: '2023',
+      award: 'Tan Sri Runme Shaw Scholarship',
+      awarder: 'Nanyang Technological University Singapore',
+    },
+    {
+      year: '2023',
+      award: 'STUD Hackathon Champions',
+      awarder: 'SUTD',
+    },
+    {
+      year: '2023',
+      award: 'ICH Bursary',
+      awarder: 'ICH Group',
+    },
+    {
+      year: '2023',
+      award: 'NTU President Research Scholar',
+      awarder: 'Nanyang Technological University Singapore',
+    },
+    {
+      year: '2023',
+      award: 'NTU Computer Science Dean List',
+      awarder: 'Nanyang Technological University Singapore',
+    },
+    {
+      year: '2022',
+      award: 'NTU Computer Science Dean List',
+      awarder: 'Nanyang Technological University Singapore',
+    },
+    {
+      year: '2019',
+      award: 'Sword of Honour',
+      awarder: 'OCS Logistics Training Institute',
+    },
+  ],
   // To hide the `My Projects` section, keep it empty.
   externalProjects: [
     /* {
