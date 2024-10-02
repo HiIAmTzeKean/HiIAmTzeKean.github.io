@@ -3,7 +3,8 @@ import { SanitizedAchievement } from '../../interfaces/sanitized-config';
 import { skeleton } from '../../utils';
 
 const ListItem = ({
-  award, awarder
+  award,
+  awarder,
 }: {
   key: number;
   year?: React.ReactNode;
@@ -20,12 +21,14 @@ const ListItem = ({
   </li>
 );
 
-
-const BracketList = ({ year, awardList }: {
+const BracketList = ({
+  year,
+  awardList,
+}: {
   key: number;
   year: React.ReactNode;
   awardList: { award: React.ReactNode; awarder: React.ReactNode }[];
-})=> {
+}) => {
   return (
     <li className="mb-5 ml-4">
       <div
@@ -37,9 +40,9 @@ const BracketList = ({ year, awardList }: {
         {awardList.map((element, index) => (
           <ListItem
             key={index}
-              award={element.award}
-              awarder={element.awarder}
-            />
+            award={element.award}
+            awarder={element.awarder}
+          />
         ))}
       </ol>
     </li>
@@ -53,7 +56,7 @@ interface AchievementProps {
 
 const Achievement = ({ loading, achievements }: AchievementProps) => {
   const renderSkeleton = () => {
-    let array = [];
+    const array = [];
     for (let index = 0; index < 0; index++) {
       array.push(
         <ListItem
@@ -68,7 +71,7 @@ const Achievement = ({ loading, achievements }: AchievementProps) => {
             className: 'my-1.5',
           })}
           awarder={skeleton({ widthCls: 'w-6/12', heightCls: 'h-3' })}
-        />
+        />,
       );
     }
 

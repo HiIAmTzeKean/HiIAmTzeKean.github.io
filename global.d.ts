@@ -408,7 +408,7 @@ interface Config {
   /**
    * Achievement list
    */
-  achievement?: Array<Achievement>;
+  achievements?: Array<Achievement>;
 
   /**
    * Publication list
