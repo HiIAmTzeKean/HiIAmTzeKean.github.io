@@ -15,14 +15,14 @@ const config = {
     twitter: '',
     mastodon: '',
     facebook: '',
-    instagram: 'ngtzekean',
+    instagram: '',
     dribbble: '',
     behance: '',
-    medium: 'ngtzekean',
+    medium: '',
     dev: '',
     stackoverflow: '', // format: userid/username
     skype: '',
-    telegram: 'ngtzekean',
+    telegram: '',
     website: '',
     phone: '',
     email: 'ngtzekean@gmail.com',
@@ -31,8 +31,15 @@ const config = {
     fileUrl:
       'https://github.com/HiIAmTzeKean/HiIAmTzeKean/blob/Master/Resume%20Tze%20Kean.pdf', // Empty fileUrl will hide the `Download Resume` button.
   },
-  skills: ['Python', 'C', 'Java', 'SQL', 'Git'],
+  skills: ['Python', 'C', 'C++', 'Java', 'SQL', 'Git'],
   experiences: [
+    {
+      company: 'Nanyang Technological University Singapore',
+      position: 'FYP',
+      from: 'Jan 2024',
+      to: 'Dec 2024',
+      companyLink: '',
+    },
     {
       company: 'ADDX',
       position: 'Data Analyst Intern',
