@@ -1,8 +1,13 @@
-import { skeleton } from '../../helpers/utils';
-import { Fragment } from 'react';
-import PropTypes from 'prop-types';
+import React, { Fragment } from 'react';
+import { SanitizedAchievement } from '../../interfaces/sanitized-config';
+import { skeleton } from '../../utils';
 
-const ListItem = ({ award, awarder }) => (
+const ListItem = ({
+  award, awarder
+}: {
+  award?: React.ReactNode;
+  awarder?: React.ReactNode;
+}) => (
   <li className="mb-5 ml-4">
     <div
       className="absolute w-2 h-2 bg-base-300 rounded-full border border-base-300 mt-1.5"
@@ -13,7 +18,13 @@ const ListItem = ({ award, awarder }) => (
   </li>
 );
 
-const BracketList = ({ year, awardList }) => {
+
+interface BracketListProps {
+  year: string;
+  awardList: { award: React.ReactNode; awarder: React.ReactNode }[];
+}
+
+const BracketList = ({ year, awardList }: BracketListProps) => {
   return (
     <li className="mb-5 ml-4">
       <div
@@ -34,7 +45,12 @@ const BracketList = ({ year, awardList }) => {
   );
 };
 
-const Achievement = ({ loading, achievement }) => {
+interface AchievementProps {
+  loading: boolean;
+  achievement: SanitizedAchievement[];
+}
+
+const Achievement = ({ loading, achievement }: AchievementProps) => {
   const renderSkeleton = () => {
     let array = [];
     for (let index = 0; index < 0; index++) {
@@ -103,21 +119,6 @@ const Achievement = ({ loading, achievement }) => {
       )}
     </>
   );
-};
-
-Achievement.propTypes = {
-  loading: PropTypes.bool.isRequired,
-  achievement: PropTypes.array.isRequired,
-};
-
-ListItem.propTypes = {
-  award: PropTypes.node,
-  awarder: PropTypes.node,
-};
-
-BracketList.propTypes = {
-  year: PropTypes.string,
-  awardList: PropTypes.array,
 };
 
 export default Achievement;

@@ -91,6 +91,12 @@ export interface SanitizedEducation {
   to: string;
 }
 
+export interface SanitizedAchievement {
+  year?: string;
+  award?: string;
+  awarder?: string;
+}
+
 export interface SanitizedPublication {
   title: string;
   conferenceName?: string;
