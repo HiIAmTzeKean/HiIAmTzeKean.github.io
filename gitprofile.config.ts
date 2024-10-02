@@ -32,14 +32,14 @@ const CONFIG = {
       header: 'My Projects',
       // To hide the `External Projects` section, keep it empty.
       projects: [
-        // {
-        //   title: 'Project Name',
-        //   description:
-        //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
-        //   imageUrl:
-        //     'https://img.freepik.com/free-vector/illustration-gallery-icon_53876-27002.jpg',
-        //   link: 'https://example.com',
-        // },
+        {
+          title: 'FYP: Streamsight',
+          description:
+            'A toolkit for offline evaluation of recommender systems',
+          imageUrl:
+            'https://raw.githubusercontent.com/HiIAmTzeKean/Streamsight/refs/heads/master/docs/source/_static/logo.png',
+          link: 'https://github.com/HiIAmTzeKean/Streamsight',
+        },
         // {
         //   title: 'Project Name',
         //   description:
@@ -84,13 +84,6 @@ const CONFIG = {
   },
   skills: ['Python', 'C', 'C++', 'Java', 'SQL', 'Git'],
   experiences: [
-    {
-      company: 'Nanyang Technological University Singapore',
-      position: 'FYP',
-      from: 'Jan 2024',
-      to: 'Dec 2024',
-      companyLink: '',
-    },
     {
       company: 'ADDX',
       position: 'Data Analyst Intern',
@@ -158,6 +151,48 @@ const CONFIG = {
       degree: 'A-Level',
       from: '2017',
       to: '2018',
+    },
+  ],
+  achievement: [
+    {
+      year: '2024',
+      award: 'Genk Capital Scholarship',
+      awarder: 'Nanyang Technological University Singapore',
+    },
+    {
+      year: '2023',
+      award: 'Tan Sri Runme Shaw Scholarship',
+      awarder: 'Nanyang Technological University Singapore',
+    },
+    {
+      year: '2023',
+      award: 'STUD Hackathon Champions',
+      awarder: 'SUTD',
+    },
+    {
+      year: '2023',
+      award: 'ICH Bursary',
+      awarder: 'ICH Group',
+    },
+    {
+      year: '2023',
+      award: 'NTU President Research Scholar',
+      awarder: 'Nanyang Technological University Singapore',
+    },
+    {
+      year: '2023',
+      award: 'NTU Computer Science Dean List',
+      awarder: 'Nanyang Technological University Singapore',
+    },
+    {
+      year: '2022',
+      award: 'NTU Computer Science Dean List',
+      awarder: 'Nanyang Technological University Singapore',
+    },
+    {
+      year: '2019',
+      award: 'Sword of Honour',
+      awarder: 'OCS Logistics Training Institute',
     },
   ],
   publications: [
