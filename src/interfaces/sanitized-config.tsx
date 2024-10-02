@@ -150,6 +150,7 @@ export interface SanitizedConfig {
   skills: Array<string>;
   experiences: Array<SanitizedExperience>;
   educations: Array<SanitizedEducation>;
+  achievements: Array<SanitizedAchievement>;
   certifications: Array<SanitizedCertification>;
   publications: Array<SanitizedPublication>;
   googleAnalytics: SanitizedGoogleAnalytics;

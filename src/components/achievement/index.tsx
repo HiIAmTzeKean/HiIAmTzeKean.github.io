@@ -5,6 +5,8 @@ import { skeleton } from '../../utils';
 const ListItem = ({
   award, awarder
 }: {
+  key: number;
+  year?: React.ReactNode;
   award?: React.ReactNode;
   awarder?: React.ReactNode;
 }) => (
@@ -19,12 +21,11 @@ const ListItem = ({
 );
 
 
-interface BracketListProps {
-  year: string;
+const BracketList = ({ year, awardList }: {
+  key: number;
+  year: React.ReactNode;
   awardList: { award: React.ReactNode; awarder: React.ReactNode }[];
-}
-
-const BracketList = ({ year, awardList }: BracketListProps) => {
+})=> {
   return (
     <li className="mb-5 ml-4">
       <div
@@ -36,9 +37,10 @@ const BracketList = ({ year, awardList }: BracketListProps) => {
         {awardList.map((element, index) => (
           <ListItem
             key={index}
-            award={element.award}
-            awarder={element.awarder}
-          />
+              award={element.award}
+              awarder={element.awarder}
+            />
+          </li>
         ))}
       </ol>
     </li>
@@ -58,15 +60,15 @@ const Achievement = ({ loading, achievement }: AchievementProps) => {
         <ListItem
           key={index}
           year={skeleton({
-            width: 'w-5/12',
-            height: 'h-4',
+            widthCls: 'w-5/12',
+            heightCls: 'h-4',
           })}
           award={skeleton({
-            width: 'w-6/12',
-            height: 'h-4',
+            widthCls: 'w-6/12',
+            heightCls: 'h-4',
             className: 'my-1.5',
           })}
-          awarder={skeleton({ width: 'w-6/12', height: 'h-3' })}
+          awarder={skeleton({ widthCls: 'w-6/12', heightCls: 'h-3' })}
         />
       );
     }
@@ -82,7 +84,7 @@ const Achievement = ({ loading, achievement }: AchievementProps) => {
             <div className="mx-3">
               <h5 className="card-title">
                 {loading ? (
-                  skeleton({ width: 'w-32', height: 'h-8' })
+                  skeleton({ widthCls: 'w-32', heightCls: 'h-8' })
                 ) : (
                   <span className="text-base-content opacity-70">
                     Major Achievements
