@@ -40,7 +40,6 @@ const BracketList = ({ year, awardList }: {
               award={element.award}
               awarder={element.awarder}
             />
-          </li>
         ))}
       </ol>
     </li>
@@ -49,10 +48,10 @@ const BracketList = ({ year, awardList }: {
 
 interface AchievementProps {
   loading: boolean;
-  achievement: SanitizedAchievement[];
+  achievements: SanitizedAchievement[];
 }
 
-const Achievement = ({ loading, achievement }: AchievementProps) => {
+const Achievement = ({ loading, achievements }: AchievementProps) => {
   const renderSkeleton = () => {
     let array = [];
     for (let index = 0; index < 0; index++) {
@@ -78,7 +77,7 @@ const Achievement = ({ loading, achievement }: AchievementProps) => {
 
   return (
     <>
-      {achievement?.length !== 0 && (
+      {achievements?.length !== 0 && (
         <div className="card shadow-lg compact bg-base-100">
           <div className="card-body">
             <div className="mx-3">
@@ -99,7 +98,7 @@ const Achievement = ({ loading, achievement }: AchievementProps) => {
                 ) : (
                   <Fragment>
                     {Array.from(
-                      achievement.reduce((arr, { year, award, awarder }) => {
+                      achievements.reduce((arr, { year, award, awarder }) => {
                         if (arr.has(year)) {
                           arr.get(year).push({ award, awarder });
                         } else {
