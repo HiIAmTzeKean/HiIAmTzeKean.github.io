@@ -103,6 +103,10 @@ export const getSanitizedConfig = (
         config?.educations?.filter(
           (item) => item.institution || item.degree || item.from || item.to,
         ) || [],
+      achievements:
+        config?.achievements?.filter(
+          (item) => item.year || item.award || item.awarder,
+        ) || [],
       publications: config?.publications?.filter((item) => item.title) || [],
       googleAnalytics: {
         id: config?.googleAnalytics?.id,

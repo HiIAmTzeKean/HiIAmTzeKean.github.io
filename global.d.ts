@@ -237,6 +237,12 @@ interface Education {
   to: string;
 }
 
+interface Achievement {
+  year?: string;
+  award?: string;
+  awarder: string;
+}
+
 interface Publication {
   title: string;
   conferenceName?: string;
@@ -398,6 +404,11 @@ interface Config {
    * Education list
    */
   educations?: Array<Education>;
+
+  /**
+   * Achievement list
+   */
+  achievement?: Array<Achievement>;
 
   /**
    * Publication list
