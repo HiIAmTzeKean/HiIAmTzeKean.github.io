@@ -247,7 +247,7 @@ const GitProfile = ({ config }: { config: Config }) => {
                 </div>
                 <div className="lg:col-span-2 col-span-1">
                   <div className="grid grid-cols-1 gap-6">
-                    {sanitizedConfig.achievement.length !== 0 && (
+                    {sanitizedConfig.achievements.length !== 0 && (
                       <Achievement
                         loading={loading}
                         achievements={sanitizedConfig.achievements}
