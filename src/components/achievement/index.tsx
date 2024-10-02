@@ -6,8 +6,6 @@ const ListItem = ({
   award,
   awarder,
 }: {
-  key: number;
-  year?: React.ReactNode;
   award?: React.ReactNode;
   awarder?: React.ReactNode;
 }) => (
@@ -25,8 +23,7 @@ const BracketList = ({
   year,
   awardList,
 }: {
-  key: number;
-  year: React.ReactNode;
+  year?: React.ReactNode;
   awardList: { award: React.ReactNode; awarder: React.ReactNode }[];
 }) => {
   return (
@@ -39,7 +36,7 @@ const BracketList = ({
       <ol className="relative border-l border-base-300 border-opacity-30 my-2 mx-4">
         {awardList.map((element, index) => (
           <ListItem
-            key={index}
+            key={`${year}-${index}`}
             award={element.award}
             awarder={element.awarder}
           />
@@ -57,14 +54,10 @@ interface AchievementProps {
 const Achievement = ({ loading, achievements }: AchievementProps) => {
   const renderSkeleton = () => {
     const array = [];
-    for (let index = 0; index < 0; index++) {
+    for (let index = 0; index < 5; index++) {
       array.push(
         <ListItem
-          key={index}
-          year={skeleton({
-            widthCls: 'w-5/12',
-            heightCls: 'h-4',
-          })}
+          key={index} 
           award={skeleton({
             widthCls: 'w-6/12',
             heightCls: 'h-4',
@@ -102,13 +95,15 @@ const Achievement = ({ loading, achievements }: AchievementProps) => {
                   <Fragment>
                     {Array.from(
                       achievements.reduce((arr, { year, award, awarder }) => {
-                        if (arr.has(year)) {
-                          arr.get(year).push({ award, awarder });
-                        } else {
-                          arr.set(year, [{ award, awarder }]);
+                        if (year) {
+                          if (arr.has(year)) {
+                            arr.get(year)?.push({ award, awarder });
+                          } else {
+                            arr.set(year, [{ award, awarder }]);
+                          }
                         }
                         return arr;
-                      }, new Map())
+                      }, new Map<string, { award: React.ReactNode; awarder: React.ReactNode }[]>()),
                     ).map(([key, value], index) => {
                       return (
                         <BracketList key={index} year={key} awardList={value} />
