@@ -35,8 +35,14 @@
     }
   ],
   "projects": [
-    "Streamsight: Offline evaluation toolkit for RS",
-    "Localization Robustness of ORB-SLAM with Dual Cameras"
+    {
+    "name": "Streamsight",
+    "description": "Streamsight: Offline evaluation toolkit for RS"
+    },
+    {
+    "name": "Jetson-Nano Dual Camera",
+    "description": "Localization Robustness of ORB-SLAM with Dual Cameras"
+    }
   ],
   "education": {
     "university": "Nanyang Technological University",

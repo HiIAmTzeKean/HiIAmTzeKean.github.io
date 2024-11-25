@@ -1,18 +1,23 @@
 {
   "name": "ngtzekean.github.io",
+  "homepage": "https://github.com/HiIAmTzeKean/ngtzekean.github.io",
   "version": "1.0.0",
-  "main": "tsconfig.js",
+  "main": "index.tsx",
   "scripts": {
+    "dev": "webpack --mode development",
+    "start": "webpack serve --mode development",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
-  "author": "",
+  "author": "Ng Tze Kean",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "autoprefixer": "^10.4.20",
+    "copy-webpack-plugin": "^12.0.2",
     "css-loader": "^7.1.2",
+    "file-loader": "^6.2.0",
     "gh-pages": "^6.2.0",
     "html-webpack-plugin": "^5.6.3",
     "postcss": "^8.4.49",
