@@ -1,0 +1,100 @@
+{
+  "experiences": [
+    {
+      "company": "ADDX Pte Ltd",
+      "role": "Data Analytics Intern",
+      "duration": "Jun 2023 - Dec 2023",
+      "supervisor": "Yogesh, Data Analytics Lead",
+      "description": [
+        "Managed and optimized 30+ database tables in Snowflake.",
+        "Developed personalized dashboards for internal use.",
+        "Engineered predictive analytics models to aid revenue growth."
+      ]
+    },
+    {
+      "company": "Wiz.AI",
+      "role": "Finance Intern",
+      "duration": "May 2023 - Jun 2023",
+      "supervisor": "Andy Teo, CFO",
+      "description": [
+        "Finance operations & Managerial accounting.",
+        "Improving existing financial tracking processes and workflows",
+        "Preparations of key account statements (BS,P&L)",
+        "Tableau (Prep and Cloud) ETL pipeline."
+      ]
+    },
+    {
+      "company": "Reangle Pte Ltd",
+      "role": "Data Analyst Intern",
+      "duration": "May 2022 - Aug 2022",
+      "supervisor": "Kazu Watanabe, CEO",
+      "description": [
+        "Developed targeted green strategies for businesses.",
+        "Executed digital marketing strategies for sustainability goals."
+      ]
+    }
+  ],
+  "projects": [
+    "Streamsight: Offline evaluation toolkit for RS",
+    "Localization Robustness of ORB-SLAM with Dual Cameras"
+  ],
+  "education": {
+    "university": "Nanyang Technological University",
+    "duration": "Aug 2021 - May 2025",
+    "gpa": "4.90 (First Class Honour)",
+    "degree": "Computer Science",
+    "specialisation": "Artificial Intelligence",
+    "minor": "Business",
+    "businessModules": [
+      "Investments",
+      "Business Finance",
+      "Accounting",
+      "Business Law",
+      "Management"
+    ],
+    "computingModules": [
+      "Reinforcement Learning",
+      "Big Data Management",
+      "Natural Language Processing",
+      "Machine Learning",
+      "Deep Learning",
+      "Database",
+      "Operating Systems"
+    ],
+    "awards": [
+      "Genk Capital Scholarship 2024",
+      "Tan Sri Runme Shaw Scholarship 2023",
+      "Ng Bok Eng Scholarship 2023",
+      "NTU President Scholar (Merit)",
+      "Dean's List (All applicable years)"
+    ],
+    "exchangeUniversities": [
+      "Peking University [Summer 2024]",
+      "University of Michigan - Shanghai Jiao Tong Joint Institute [Semester 2024]",
+      "Shanghai Jiao Tong University [Semester 2024]",
+      "Tsinghua University [Virtual 2023]",
+      "National University Singapore [Semester 2022]"
+    ],
+    "hackathons": [
+      "中国国际⼤赛 (Joint Prosthesis), 2024",
+      "NTU SCSE TechFest Hackathon 2024, 1st Runner-up",
+      "TikTok Hackathon Challenge 2023, Finalist",
+      "SUTD Hackathon 2023, Champion"
+    ],
+    "roles": [
+      "NTU College (CCDS) Ambassador 2021-2023",
+      "NTU College (COE) Ambassador 2021-2024",
+      "NTU Overseas (GEM) Ambassador",
+      "EXCO, NTU-Dyson Ambassador 2021-2022",
+      "EXCO, NTU Aikido 2021-2022"
+    ],
+    "activities": [
+      "Various SingCham Events in Shanghai 2024",
+      "Contribution to Abbott’s Diabetes Management 2023",
+      "NTU Best Foot Forward Fund Raising 2022/23",
+      "NTU URECA (Edge Computing) 2022",
+      "NTU Bike Rally 100km 2021, 1st Runner-up"
+    ]
+  },
+  "resume": "/resume.pdf"
+}
