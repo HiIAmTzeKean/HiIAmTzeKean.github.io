@@ -5,57 +5,32 @@ export const renderProjects = async (
   const fetchGitHubProjects = async (): Promise<
     { name: string; description: string; url: string; stars: number }[]
   > => {
-      const query = `
-      {
-        user(login: "HiIAmTzeKean") {
-          pinnedItems(first: 6, types: REPOSITORY) {
-            nodes {
-              ... on Repository {
-                name
-                description
-                url
-                stargazerCount
-              }
-            }
-          }
-        }
-      }
-    `;
+    const query = `https://api.github.com/search/repositories?q=user:HiIAmTzeKean&sort=stars&order=desc&per_page=9`;
 
-      const token = process.env.TOKEN;
+    try {
+      const response = await fetch(query);
+      const data = await response.json();
 
-      try {
-        const response = await fetch("https://api.github.com/graphql", {
-          method: "POST",
-          headers: {
-            Authorization: `Bearer ${token}`,
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({ query }),
-        });
-
-        const data = await response.json();
-
-        if (data.errors) {
-          console.error("Error fetching pinned repositories:", data.errors);
-          return [];
-        }
-
-        // Map the response to the desired structure
-        const pinnedRepos = data.data.user.pinnedItems.nodes.map(
-          (repo: any) => ({
-            name: repo.name,
-            description: repo.description || "No description available", // Handle null description
-            url: repo.url,
-            stars: repo.stargazerCount,
-          })
-        );
-        return pinnedRepos;
-      } catch (error) {
-        console.error("Error fetching pinned repositories:", error);
+      if (data.errors) {
+        console.error("Error fetching GitHub repositories:", data.errors);
         return [];
       }
+
+      // Map the response to the desired structure
+      const topRepos = data.items.map((repo: any) => ({
+        name: repo.name,
+        description: repo.description || "No description available", // Handle null description
+        url: repo.html_url,
+        stars: repo.stargazers_count,
+      }));
+
+      return topRepos;
+    } catch (error) {
+      console.error("Error fetching GitHub repositories:", error);
+      return [];
+    }
   };
+
 
   // Fetch GitHub projects
   const gitHubProjects = await fetchGitHubProjects();
