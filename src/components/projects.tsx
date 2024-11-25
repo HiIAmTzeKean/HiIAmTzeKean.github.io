@@ -22,7 +22,7 @@ export const renderProjects = async (
       }
     `;
 
-      const token = process.env.GITHUB_TOKEN;
+      const token = process.env.TOKEN;
 
       try {
         const response = await fetch("https://api.github.com/graphql", {
