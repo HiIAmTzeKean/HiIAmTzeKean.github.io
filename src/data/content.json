@@ -123,6 +123,48 @@
       "NTU Bike Rally 100km 2021, 1st Runner-up"
     ]
   },
+  "achievements": [
+    {
+      "title": "Genk Capital Scholarship",
+      "awarder": "Nanyang Technological University Singapore",
+      "date": "2024"
+    },
+    {
+      "title": "Tan Sri Runme Shaw Scholarship",
+      "awarder": "Nanyang Technological University Singapore",
+      "date": "2023"
+    },
+    {
+      "title": "SUTD Hackathon Champions",
+      "awarder": "SUTD",
+      "date": "2023"
+    },
+    {
+      "title": "ICH Bursary",
+      "awarder": "ICH Group",
+      "date": "2023"
+    },
+    {
+      "title": "NTU President Research Scholar",
+      "awarder": "Nanyang Technological University Singapore",
+      "date": "2023"
+    },
+    {
+      "title": "NTU Computer Science Dean List",
+      "awarder": "Nanyang Technological University Singapore",
+      "date": "2023"
+    },
+    {
+      "title": "NTU Computer Science Dean List",
+      "awarder": "Nanyang Technological University Singapore",
+      "date": "2022"
+    },
+    {
+      "title": "Sword of Honour",
+      "awarder": "OCS Logistics Training Institute",
+      "date": "2019"
+    }
+  ],
   "resume": "public/resume.pdf",
   "contact": {
     "basedIn": "Singapore",

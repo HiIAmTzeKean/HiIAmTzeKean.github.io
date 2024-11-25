@@ -5,3 +5,78 @@
 body {
     @apply bg-blue-50 text-gray-900 font-sans;
 }
+
+/* Tree Timeline */
+.timeline-tree {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.timeline-year {
+    margin-left: 20px;
+}
+
+.year-label {
+    margin-bottom: 4px;
+    /* Reduced space between year label and achievements */
+    font-size: 1.25rem;
+    /* Ensure year is still visible but compact */
+}
+
+.branch {
+    position: relative;
+}
+
+.achievement {
+    position: relative;
+    margin-left: 12px;
+    /* Reduced space between each achievement */
+    padding: 4px 12px;
+    /* Further reduced vertical padding */
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    max-width: 100%;
+    /* Make the card span the width of the container */
+    margin-bottom: 6px;
+    /* Tight spacing between cards */
+}
+
+.achievement:hover {
+    background-color: #e0f2ff;
+    /* Light blue on hover */
+    transform: translateX(6px);
+    /* Slight horizontal movement on hover */
+}
+
+.achievement::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -16px;
+    /* Reduced space between the line and the card */
+    width: 2px;
+    height: 100%;
+    background-color: #2563eb;
+    /* Blue color */
+}
+
+.achievement:last-child::before {
+    height: calc(100% - 50%);
+}
+
+.achievement div {
+    position: relative;
+}
+
+.achievement div::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    width: 6px;
+    height: 6px;
+    background-color: #2563eb;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}

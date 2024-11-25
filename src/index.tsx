@@ -3,6 +3,7 @@ import { renderAbout } from "./components/about";
 import { renderExperience } from "./components/experience";
 import { renderProjects } from "./components/projects";
 import { renderEducation } from "./components/education";
+import { renderAchievements } from "./components/achievements";
 import { renderResume } from "./components/resume";
 import { renderBlogPosts } from "./components/blog"; // Import the blog component
 
@@ -14,6 +15,7 @@ const routes: Record<string, () => string | Promise<string>> = {
   experience: () => renderExperience(contentData.experiences),
   projects: () => renderProjects(contentData.projects),
   education: () => renderEducation(contentData.education),
+  achievements: () => renderAchievements(contentData.achievements),
   resume: () => renderResume(contentData.resume),
   blog: async () => await renderBlogPosts(),
 };
