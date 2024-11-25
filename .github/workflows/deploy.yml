@@ -20,10 +20,9 @@ jobs:
       - name: Install dependencies
         run: npm install
       
-      - name: create .env file
-        run: echo "GITHUB_TOKEN=${{ secrets.GITHUB_TOKEN }}" > .env
-
       - name: Build project
+        env:
+            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Pass the GITHUB_TOKEN
         run: npm run build
       
       - name: Upload static files as artifact
@@ -52,3 +51,8 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          branch: gh-pages
+          folder: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
