@@ -1,6 +1,7 @@
 const RSS2JSON_URL = "https://api.rss2json.com/v1/api.json";
 const FEED_URL = "https://medium.com/feed/@ngtzekean";
 const DEFAULT_IMAGE = "public/photo.jpeg";
+// https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@ngtzekean
 
 export const fetchMediumPosts = async (): Promise<
   { title: string; url: string; image: string; date: string }[]

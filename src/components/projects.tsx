@@ -5,27 +5,56 @@ export const renderProjects = async (
   const fetchGitHubProjects = async (): Promise<
     { name: string; description: string; url: string; stars: number }[]
   > => {
-    try {
-      const response = await fetch(
-        "https://api.github.com/users/HiIAmTzeKean/repos"
-      );
-      const repos = await response.json();
+      const query = `
+      {
+        user(login: "HiIAmTzeKean") {
+          pinnedItems(first: 6, types: REPOSITORY) {
+            nodes {
+              ... on Repository {
+                name
+                description
+                url
+                stargazerCount
+              }
+            }
+          }
+        }
+      }
+    `;
 
-      // Sort by stars (descending) and pick the top 6
-      const sortedRepos = repos
-        .sort((a: any, b: any) => b.stargazers_count - a.stargazers_count)
-        .slice(0, 6);
+      const token = process.env.GITHUB_TOKEN;
 
-      return sortedRepos.map((repo: any) => ({
-        name: repo.name,
-        description: repo.description || "No description provided.",
-        url: repo.html_url,
-        stars: repo.stargazers_count,
-      }));
-    } catch (error) {
-      console.error("Error fetching GitHub projects:", error);
-      return [];
-    }
+      try {
+        const response = await fetch("https://api.github.com/graphql", {
+          method: "POST",
+          headers: {
+            Authorization: `Bearer ${token}`,
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ query }),
+        });
+
+        const data = await response.json();
+
+        if (data.errors) {
+          console.error("Error fetching pinned repositories:", data.errors);
+          return [];
+        }
+
+        // Map the response to the desired structure
+        const pinnedRepos = data.data.user.pinnedItems.nodes.map(
+          (repo: any) => ({
+            name: repo.name,
+            description: repo.description || "No description available", // Handle null description
+            url: repo.url,
+            stars: repo.stargazerCount,
+          })
+        );
+        return pinnedRepos;
+      } catch (error) {
+        console.error("Error fetching pinned repositories:", error);
+        return [];
+      }
   };
 
   // Fetch GitHub projects
