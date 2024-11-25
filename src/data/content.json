@@ -6,9 +6,11 @@
       "duration": "Jun 2023 - Dec 2023",
       "supervisor": "Yogesh, Data Analytics Lead",
       "description": [
-        "Managed and optimized 30+ database tables in Snowflake.",
-        "Developed personalized dashboards for internal use.",
-        "Engineered predictive analytics models to aid revenue growth."
+        "Building of data and feature marts in Snowflake (SQL)",
+        "Exploratory data analysis, data profiling, data mapping and data validation",
+        "Data analytics and business intelligence through visualisation tools (Power BI) for internal departments and key management",
+        "Operating in cross-functional team under AGILE framework",
+        "Predictive analytics to drive revenue by leveraging on big data and machine learning techniques (Python sklearn, Supervised and unsupervised learning)"
       ]
     },
     {
@@ -29,19 +31,38 @@
       "duration": "May 2022 - Aug 2022",
       "supervisor": "Kazu Watanabe, CEO",
       "description": [
-        "Developed targeted green strategies for businesses.",
-        "Executed digital marketing strategies for sustainability goals."
+        "Conceptualized green finance business model through data analytics",
+        "Developed targeted green strategies for various sectors and executed digital marketing strategies",
+        "Formulated actionable tactics to promote green businesses",
+        "Promoted sustainable growth and development in alignment with SG goals through good ESG practices"
+      ]
+    },
+    {
+      "company": "Ministry of Health",
+      "role": "Engagement and Strategy Intern",
+      "duration": "Nov 2020 - Feb 2021",
+      "supervisor": "Chan Weng Chee, Senior Assistant Director",
+      "description": [
+        "Regulatory Compliance & Enforcement Division (RCE) / Engagement & Strategy",
+        "Administration of online telemedicine E-training (COVID-19)",
+        "Supported HCSA team for replacement of PHMCA with HCSA",
+        "Streamline processes in MOH LEAP Sandbox team with Python",
+        "Data analytics and visualisation for key management"
       ]
     }
   ],
   "projects": [
     {
-    "name": "Streamsight",
-    "description": "Streamsight: Offline evaluation toolkit for RS"
+      "name": "Streamsight",
+      "description": "Streamsight: Offline evaluation toolkit for RS",
+      "url": "https://github.com/HiIAmTzeKean/Streamsight",
+      "image": "public/streamsight.png"
     },
     {
-    "name": "Jetson-Nano Dual Camera",
-    "description": "Localization Robustness of ORB-SLAM with Dual Cameras"
+      "name": "Jetson-Nano SLAM",
+      "description": "Localization Robustness of ORB-SLAM with Dual Cameras",
+      "url": "https://github.com/HiIAmTzeKean/Jetson-Nano-SLAM",
+      "image": "public/jetson.png"
     }
   ],
   "education": {
@@ -102,5 +123,16 @@
       "NTU Bike Rally 100km 2021, 1st Runner-up"
     ]
   },
-  "resume": "/resume.pdf"
+  "resume": "public/resume.pdf",
+  "contact": {
+    "basedIn": "Singapore",
+    "organization": "Nanyang Technological University",
+    "github": "HiIAmTzeKean",
+    "linkedin": "ngtzekean",
+    "instagram": "ngtzekean",
+    "medium": "ngtzekean",
+    "telegram": "ngtzekean",
+    "phone": "+6582288710",
+    "email": "ngtzekean@gmail.com"
+  }
 }

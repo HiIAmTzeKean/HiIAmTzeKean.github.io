@@ -10,7 +10,7 @@ const contentData = require("./data/content.json");
 
 // Define routes for the different sections
 const routes: Record<string, () => string | Promise<string>> = {
-  about: () => renderAbout(),
+  about: () => renderAbout(contentData.contact),
   experience: () => renderExperience(contentData.experiences),
   projects: () => renderProjects(contentData.projects),
   education: () => renderEducation(contentData.education),

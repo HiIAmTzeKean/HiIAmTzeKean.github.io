@@ -8,7 +8,6 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
-    publicPath: "/ngtzekean.github.io/", // Update to your GitHub repository name
   },
   resolve: {
     extensions: [".ts", ".tsx", ".js"],
