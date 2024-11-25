@@ -8,31 +8,53 @@
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
+    <style>
+      /* Additional custom styles */
+      .navbar { transition: all 0.3s ease; }
+      .navbar.open { background-color: #2563eb; }
+    </style>
   </head>
 
   <body class="font-sans bg-gray-50 flex flex-col min-h-screen">
     <header class="bg-blue-600 text-white py-4">
       <nav class="max-w-7xl mx-auto flex justify-between items-center">
         <h1 class="text-2xl font-bold">Ng Tze Kean</h1>
-        <ul class="flex space-x-6">
+
+        <!-- Hamburger Menu Icon (Mobile View) -->
+        <div class="block lg:hidden">
+          <button id="hamburger-icon" aria-label="Toggle Navigation Menu" class="text-white">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Navigation Links (Desktop View) -->
+        <ul class="hidden lg:flex space-x-6">
           <li><a href="#about" class="hover:text-gray-300">About</a></li>
-          <li>
-            <a href="#experience" class="hover:text-gray-300">Experience</a>
-          </li>
+          <li><a href="#experience" class="hover:text-gray-300">Experience</a></li>
           <li><a href="#projects" class="hover:text-gray-300">Projects</a></li>
-          <li>
-            <a href="#education" class="hover:text-gray-300">Education</a>
-          </li>
+          <li><a href="#education" class="hover:text-gray-300">Education</a></li>
           <li><a href="#resume" class="hover:text-gray-300">Resume</a></li>
           <li><a href="#blog" class="hover:text-gray-300">Blog</a></li>
         </ul>
       </nav>
+      <!-- Mobile Navigation Links -->
+      <div id="mobile-menu" class="lg:hidden bg-blue-600 text-white space-y-4 p-6 absolute top-16 left-0 w-full hidden">
+        <a href="#about" class="block hover:text-gray-300">About</a>
+        <a href="#experience" class="block hover:text-gray-300">Experience</a>
+        <a href="#projects" class="block hover:text-gray-300">Projects</a>
+        <a href="#education" class="block hover:text-gray-300">Education</a>
+        <a href="#resume" class="block hover:text-gray-300">Resume</a>
+        <a href="#blog" class="block hover:text-gray-300">Blog</a>
+      </div>
     </header>
 
     <!-- Main Content Area -->
     <main id="content" class="py-10 px-4 sm:px-6 lg:px-8 flex-1">
       <!-- Content will be dynamically injected here -->
     </main>
+
     <!-- Footer -->
     <footer class="bg-blue-600 text-white py-6">
       <div class="max-w-7xl mx-auto text-center">
@@ -50,5 +72,26 @@
         </p>
       </div>
     </footer>
+
+    <!-- JavaScript for toggling the mobile menu -->
+    <script>
+      const hamburgerIcon = document.getElementById('hamburger-icon');
+      const mobileMenu = document.getElementById('mobile-menu');
+      const mobileLinks = document.querySelectorAll('#mobile-menu a');
+
+      // Toggle the mobile menu when the hamburger icon is clicked
+      hamburgerIcon.addEventListener('click', () => {
+        mobileMenu.classList.toggle('hidden');
+        mobileMenu.classList.toggle('block');
+      });
+
+      // Close the mobile menu when a link is clicked
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          mobileMenu.classList.add('hidden');
+          mobileMenu.classList.remove('block');
+        });
+      });
+    </script>
   </body>
 </html>

@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "tsconfig.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,7 @@
   "devDependencies": {
     "autoprefixer": "^10.4.20",
     "css-loader": "^7.1.2",
+    "gh-pages": "^6.2.0",
     "html-webpack-plugin": "^5.6.3",
     "postcss": "^8.4.49",
     "postcss-loader": "^8.1.1",
