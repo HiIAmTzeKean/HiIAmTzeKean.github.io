@@ -1,6 +1,16 @@
 {
   "experiences": [
     {
+      "company": "Flo Energy Pte Ltd",
+      "role": "Data Analytics",
+      "duration": "Dec 2024 - Present",
+      "supervisor": "Nils, Data Team Lead",
+      "description": [
+        "Building demand and supply forecasting models for energy consumption in Python",
+        "Simulation of energy consumption and production in Singapore"
+      ]
+    },
+    {
       "company": "ADDX Pte Ltd",
       "role": "Data Analytics Intern",
       "duration": "Jun 2023 - Dec 2023",

@@ -4,7 +4,11 @@ export const renderAbout = (contentData: any): string => `
   
   <!-- About Image Section -->
   <div class="flex flex-col md:flex-row items-center mb-8">
-    <img src="public/photo.jpeg" alt="Ng Tze Kean" class="w-60 h-60 rounded-full shadow-lg mb-6 md:mb-0 md:mr-8" />
+    <img 
+      src="public/photo.jpeg" 
+      alt="Ng Tze Kean" 
+      class="w-60 h-60 shadow-lg mb-6 md:mb-0 md:mr-8 object-cover object-center" 
+    />
     <div>
       <p class="text-xl text-gray-800 font-semibold">Hi! I'm Ng Tze Kean, a passionate Computer Science student specializing in AI and Business.</p>
       <p class="text-lg text-gray-700 mt-4">I'm from Singapore, and I'm deeply passionate about technology, artificial intelligence, and business innovation. Currently, I am pursuing my undergraduate studies at Nanyang Technological University (NTU), where I specialize in AI with a minor in Business. I am excited about leveraging technology to solve real-world problems and making a positive impact on society.</p>
