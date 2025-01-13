@@ -17,36 +17,33 @@ export const renderAchievements = (
   ).sort(([yearA], [yearB]) => parseInt(yearB) - parseInt(yearA)); // Ensure descending order of years
 
   return `
-<section id="achievements" class="max-w-7xl mx-auto px-6 py-12 bg-white">
-  <h2 class="text-3xl font-semibold mb-8 text-gray-800">Major Achievements</h2>
-  <div class="relative">
-    <div class="timeline-tree">
-      ${groupedAchievements
-        .map(
-          ([year, achievements]) => `
-        <div class="timeline-year mb-6">
-          <div class="year-label text-xl font-bold text-blue-600">${year}</div>
-          <div class="branch ml-4 border-l-4 border-blue-600 pl-6">
-            ${achievements
-              .map(
-                (achievement) => `
-              <div class="achievement mb-4 relative hover:bg-blue-100 transition duration-300">
-                <div class="absolute -left-6 w-5 h-5 bg-blue-600 rounded-full flex items-center justify-center">
-                  <span class="w-2 h-2 bg-white rounded-full"></span>
-                </div>
-                <h3 class="text-lg font-semibold text-blue-600">${achievement.title}</h3>
-                <p class="text-xs text-gray-500">${achievement.date}</p>
-                <p class="text-sm text-gray-700">${achievement.awarder}</p>
-              </div>
-            `
-              )
-              .join("")}
+<section id="achievements" class="max-w-7xl mx-auto px-4 py-8 bg-white">
+  <h2 class="text-3xl font-semibold mb-6 text-gray-800">Major Achievements</h2>
+  <div class="timeline">
+    ${groupedAchievements
+      .map(
+        ([year, achievements]) => `
+      <div class="timeline-year">
+        <div class="year-label">${year}</div>
+        <div class="achievements-group">
+          ${achievements
+            .map(
+              (achievement) => `
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">${achievement.title}</h3>
+              <p class="timeline-awarder">${achievement.awarder}</p>
+            </div>
           </div>
+          `
+            )
+            .join("")}
         </div>
-      `
-        )
-        .join("")}
-    </div>
+      </div>
+    `
+      )
+      .join("")}
   </div>
 </section>
 `;

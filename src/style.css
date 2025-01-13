@@ -6,77 +6,106 @@ body {
     @apply bg-blue-50 text-gray-900 font-sans;
 }
 
-/* Tree Timeline */
-.timeline-tree {
-    position: relative;
-    display: flex;
-    flex-direction: column;
+#mobile-menu {
+    z-index: 50;
+    /* Make sure it's above the content */
+    position: absolute;
+    top: 4rem;
+    /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    background-color: #2563eb;
+    /* Ensure the background color is the same as the navbar */
+    padding: 1rem;
+    display: none;
+    /* Initially hidden */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Optional shadow for better visibility */
 }
 
+/* When the mobile menu is shown, display it */
+#mobile-menu.show {
+    display: block;
+}
+
+/* Timeline Container */
+.timeline {
+    position: relative;
+    padding-left: 1.5rem;
+    border-left: 2px solid #2563eb;
+    /* Blue timeline line */
+}
+
+/* Year Label */
 .timeline-year {
-    margin-left: 20px;
+    margin-bottom: 1rem;
 }
 
 .year-label {
-    margin-bottom: 4px;
-    /* Reduced space between year label and achievements */
-    font-size: 1.25rem;
-    /* Ensure year is still visible but compact */
+    font-size: 1rem;
+    font-weight: bold;
+    color: #2563eb;
+    margin-bottom: 0.5rem;
 }
 
-.branch {
+/* Individual Timeline Item */
+.timeline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 0.5rem;
+    /* Minimal vertical spacing */
     position: relative;
 }
 
-.achievement {
-    position: relative;
-    margin-left: 12px;
-    /* Reduced space between each achievement */
-    padding: 4px 12px;
-    /* Further reduced vertical padding */
-    border-radius: 8px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    max-width: 100%;
-    /* Make the card span the width of the container */
-    margin-bottom: 6px;
-    /* Tight spacing between cards */
-}
-
-.achievement:hover {
-    background-color: #e0f2ff;
-    /* Light blue on hover */
-    transform: translateX(6px);
-    /* Slight horizontal movement on hover */
-}
-
-.achievement::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -16px;
-    /* Reduced space between the line and the card */
-    width: 2px;
-    height: 100%;
-    background-color: #2563eb;
-    /* Blue color */
-}
-
-.achievement:last-child::before {
-    height: calc(100% - 50%);
-}
-
-.achievement div {
-    position: relative;
-}
-
-.achievement div::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: -10px;
-    width: 6px;
-    height: 6px;
+/* Marker for Each Item */
+.timeline-marker {
+    width: 8px;
+    height: 8px;
     background-color: #2563eb;
     border-radius: 50%;
-    transform: translateY(-50%);
+    position: absolute;
+    left: -6px;
+    top: 0.4rem;
+    /* Align with content */
+}
+
+/* Content for Each Item */
+.timeline-content {
+    margin-left: 1.5rem;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #e5e7eb;
+    /* Light border */
+    border-radius: 4px;
+    background-color: #f9fafb;
+    /* Light gray background */
+    width: 100%;
+    /* Full width */
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow */
+}
+
+.timeline-title {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 0.25rem;
+}
+
+.timeline-date {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.125rem;
+}
+
+.timeline-awarder {
+    font-size: 0.875rem;
+    color: #4b5563;
+}
+
+/* Hover Effect */
+.timeline-item:hover .timeline-content {
+    background-color: #e0f2fe;
+    /* Light blue */
+    border-color: #2563eb;
+    /* Blue border on hover */
 }
