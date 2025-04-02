@@ -75,65 +75,67 @@
       "image": "public/jetson.png"
     }
   ],
-  "education": {
-    "university": "Nanyang Technological University",
-    "duration": "Aug 2021 - May 2025",
-    "gpa": "4.90 (First Class Honour)",
-    "degree": "Computer Science",
-    "specialisation": "Artificial Intelligence",
-    "minor": "Business",
-    "businessModules": [
-      "Investments",
-      "Business Finance",
-      "Accounting",
-      "Business Law",
-      "Management"
-    ],
-    "computingModules": [
-      "Reinforcement Learning",
-      "Big Data Management",
-      "Natural Language Processing",
-      "Machine Learning",
-      "Deep Learning",
-      "Database",
-      "Operating Systems"
-    ],
-    "awards": [
-      "Genk Capital Scholarship 2024",
-      "Tan Sri Runme Shaw Scholarship 2023",
-      "Ng Bok Eng Scholarship 2023",
-      "NTU President Scholar (Merit)",
-      "Dean's List (All applicable years)"
-    ],
-    "exchangeUniversities": [
-      "Peking University [Summer 2024]",
-      "University of Michigan - Shanghai Jiao Tong Joint Institute [Semester 2024]",
-      "Shanghai Jiao Tong University [Semester 2024]",
-      "Tsinghua University [Virtual 2023]",
-      "National University Singapore [Semester 2022]"
-    ],
-    "hackathons": [
-      "中国国际⼤赛 (Joint Prosthesis), 2024",
-      "NTU SCSE TechFest Hackathon 2024, 1st Runner-up",
-      "TikTok Hackathon Challenge 2023, Finalist",
-      "SUTD Hackathon 2023, Champion"
-    ],
-    "roles": [
-      "NTU College (CCDS) Ambassador 2021-2023",
-      "NTU College (COE) Ambassador 2021-2024",
-      "NTU Overseas (GEM) Ambassador",
-      "EXCO, NTU-Dyson Ambassador 2021-2022",
-      "EXCO, NTU Aikido 2021-2022"
-    ],
-    "activities": [
-      "Various SingCham Events in Shanghai 2024",
-      "Contribution to Abbott’s Diabetes Management 2023",
-      "NTU Best Foot Forward Fund Raising 2022/23",
-      "NTU URECA (Edge Computing) 2022",
-      "NTU Bike Rally 100km 2021, 1st Runner-up"
-    ]
-  },
+  "education": [
+    {
+      "university": "Nanyang Technological University",
+      "duration": "Aug. 2021 - Jul. 2025",
+      "gpa": "4.92 / 5.0 (First Class Honours)",
+      "degree": "Bachelor in Computer Science",
+      "specialisation": "Artificial Intelligence",
+      "minor": "Business"
+    },
+    {
+      "university": "Peking University",
+      "duration": "Jul. 2024 - Jul. 2024",
+      "gpa": "",
+      "degree": "Summer Exchange",
+      "specialisation": "Scholarship recipient for summer school",
+      "minor": ""
+    },
+    {
+      "university": "Shanghai Jiao Tong University",
+      "duration": "Jan. 2024 - Jun. 2024",
+      "gpa": "",
+      "degree": "Exchange Student",
+      "specialisation": "",
+      "minor": ""
+    },
+    {
+      "university": "University of Michigan - Shanghai Jiao Tong University",
+      "duration": "Jan. 2024 - Jun. 2024",
+      "gpa": "",
+      "degree": "Exchange Student",
+      "specialisation": "",
+      "minor": ""
+    },
+    {
+      "university": "Tsinghua University",
+      "duration": "Aug. 2023 - Dec. 2023",
+      "gpa": "",
+      "degree": "Virtual Exchange",
+      "specialisation": "",
+      "minor": ""
+    },
+    {
+      "university": "National University of Singapore",
+      "duration": "Jan. 2023 - May. 2023",
+      "gpa": "",
+      "degree": "Exchange Student",
+      "specialisation": "",
+      "minor": ""
+    }
+  ],
   "achievements": [
+    {
+      "title": "Valedictorian class 2025",
+      "awarder": "Nanyang Technological University Singapore",
+      "date": "2025"
+    },
+    {
+      "title": "Koh Boon Hwee Scholar Award Nominee",
+      "awarder": "Nanyang Technological University Singapore",
+      "date": "2025"
+    },
     {
       "title": "Genk Capital Scholarship",
       "awarder": "Nanyang Technological University Singapore",

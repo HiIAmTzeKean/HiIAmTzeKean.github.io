@@ -1,7 +1,6 @@
 const RSS2JSON_URL = "https://api.rss2json.com/v1/api.json";
 const FEED_URL = "https://medium.com/feed/@ngtzekean";
 const DEFAULT_IMAGE = "public/photo.jpeg";
-// https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@ngtzekean
 
 export const fetchMediumPosts = async (): Promise<
   { title: string; url: string; image: string; date: string }[]
@@ -12,12 +11,27 @@ export const fetchMediumPosts = async (): Promise<
     );
     const data = await response.json();
 
-    return data.items.map((item: any) => ({
-      title: item.title,
-      url: item.link,
-      image: item.thumbnail || DEFAULT_IMAGE, // Use thumbnail or fallback image
-      date: new Date(item.pubDate).toLocaleDateString(), // Format the publication date
-    }));
+    return data.items.map((item: any) => {
+      let imageUrl = DEFAULT_IMAGE; // Default image
+
+      // Try to extract image from content or other available fields
+      if (item.content) {
+        const imgRegex = /<img[^>]+src="([^">]+)"/g;
+        const imgMatch = imgRegex.exec(item.content);
+        if (imgMatch && imgMatch[1]) {
+          imageUrl = imgMatch[1];
+        }
+      } else if (item.thumbnail) {
+        imageUrl = item.thumbnail;
+      }
+
+      return {
+        title: item.title,
+        url: item.link,
+        image: imageUrl,
+        date: new Date(item.pubDate).toLocaleDateString(),
+      };
+    });
   } catch (error) {
     console.error("Error fetching Medium blog posts:", error);
     return [];
@@ -27,15 +41,11 @@ export const fetchMediumPosts = async (): Promise<
 export const renderBlogPosts = async (): Promise<string> => {
   const blogPosts = await fetchMediumPosts();
 
-  // Sort posts by publication date (newest first)
   const sortedPosts = blogPosts.sort(
     (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
   );
 
-  // Take the top 8 posts
   const topPosts = sortedPosts.slice(0, 8);
-
-  console.log("Top Blog Posts:", topPosts);
 
   return `
 <section id="blog" class="max-w-7xl mx-auto px-6 py-12 bg-white">
