@@ -18,23 +18,23 @@ export const renderAchievements = (
 
   return `
 <section id="achievements" class="max-w-7xl mx-auto px-4 py-8 bg-white">
-  <h2 class="text-3xl font-semibold mb-6 text-gray-800">Major Achievements</h2>
-  <div class="timeline">
+  <h2 class="text-2xl font-semibold mb-6 text-gray-800">Major Achievements</h2>
+  <div class="space-y-6"> <!-- Reduced space between year groups -->
     ${groupedAchievements
       .map(
         ([year, achievements]) => `
-      <div class="timeline-year">
-        <div class="year-label">${year}</div>
-        <div class="achievements-group">
+      <div>
+        <h3 class="text-xl font-bold text-blue-600 mb-3">${year}</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4"> <!-- Compact grid layout -->
           ${achievements
             .map(
               (achievement) => `
-          <div class="timeline-item">
-            <div class="timeline-marker"></div>
-            <div class="timeline-content">
-              <h3 class="timeline-title">${achievement.title}</h3>
-              <p class="timeline-awarder">${achievement.awarder}</p>
-            </div>
+          <div class="bg-gray-50 p-4 rounded-md shadow-sm hover:shadow-md transition-shadow duration-200">
+            <h4 class="text-lg font-medium text-gray-800">${achievement.title}</h4>
+            <p class="text-sm text-gray-500"><strong>Awarded by:</strong> ${achievement.awarder}</p>
+            <p class="text-sm text-gray-500"><strong>Year:</strong> ${new Date(
+              achievement.date
+            ).getFullYear()}</p>
           </div>
           `
             )

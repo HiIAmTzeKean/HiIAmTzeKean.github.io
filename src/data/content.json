@@ -4,10 +4,11 @@
       "company": "Flo Energy Pte Ltd",
       "role": "Data Analytics",
       "duration": "Dec 2024 - Present",
-      "supervisor": "Nils, Data Team Lead",
+      "supervisor": "Nils Trepstra, Data Team Lead",
       "description": [
-        "Building demand and supply forecasting models for energy consumption in Python",
-        "Simulation of energy consumption and production in Singapore"
+        "Predictive modelling of demand and supply of the energy market through bid ask simulation",
+        "Battery Energy Storage Systems (BESS) simulation and analysis to drive new revenue stream",
+        "Feature engineering and time series analysis in python"
       ]
     },
     {
@@ -82,15 +83,26 @@
       "gpa": "4.92 / 5.0 (First Class Honours)",
       "degree": "Bachelor in Computer Science",
       "specialisation": "Artificial Intelligence",
-      "minor": "Business"
+      "minor": "Business",
+      "description": [
+        "NTU Ambassador AY24",
+        "CCDS Outreach Ambassador AY24",
+        "SCSE Outreach Ambassador AY21,22,23",
+        "NTU GEM Ambassador AY23",
+        "College of Engineering Student Unibuddy AY22,23",
+        "College of Engineering Student Ambassador AY21,22,23",
+        "EXCO (Technical Director), NTU-Dyson student ambassador AY21",
+        "EXCO (Logistics head), NTU Aikido AY21"
+      ]
     },
     {
       "university": "Peking University",
       "duration": "Jul. 2024 - Jul. 2024",
       "gpa": "",
       "degree": "Summer Exchange",
-      "specialisation": "Scholarship recipient for summer school",
-      "minor": ""
+      "specialisation": "",
+      "minor": "",
+      "description": "Scholarship recipient for summer school"
     },
     {
       "university": "Shanghai Jiao Tong University",
@@ -98,7 +110,8 @@
       "gpa": "",
       "degree": "Exchange Student",
       "specialisation": "",
-      "minor": ""
+      "minor": "",
+      "description": "Took modules in Reinforcement Learning and Cyber security"
     },
     {
       "university": "University of Michigan - Shanghai Jiao Tong University",
@@ -106,7 +119,8 @@
       "gpa": "",
       "degree": "Exchange Student",
       "specialisation": "",
-      "minor": ""
+      "minor": "",
+      "description": "Took modules in Machine Learning and Data Science using Python"
     },
     {
       "university": "Tsinghua University",
@@ -114,7 +128,8 @@
       "gpa": "",
       "degree": "Virtual Exchange",
       "specialisation": "",
-      "minor": ""
+      "minor": "",
+      "description": "Took modules in Big Data and Data Mining"
     },
     {
       "university": "National University of Singapore",
@@ -122,7 +137,8 @@
       "gpa": "",
       "degree": "Exchange Student",
       "specialisation": "",
-      "minor": ""
+      "minor": "",
+      "description": "Took modules in Software Engineering and Database Management Systems"
     }
   ],
   "achievements": [
@@ -147,13 +163,28 @@
       "date": "2024"
     },
     {
+      "title": "NTU Tech Fest Hackathon (1st Runner Up)",
+      "awarder": "Nanyang Technological University Singapore",
+      "date": "2024"
+    },
+    {
       "title": "Tan Sri Runme Shaw Scholarship",
       "awarder": "Nanyang Technological University Singapore",
       "date": "2023"
     },
     {
-      "title": "SUTD Hackathon Champions",
+      "title": "SUTD Hackathon (Champions)",
       "awarder": "SUTD",
+      "date": "2023"
+    },
+    {
+      "title": "TikTok Hackathon Challenge (Finalist)",
+      "awarder": "TikTok",
+      "date": "2023"
+    },
+    {
+      "title": "NTU-Abbott diabetes case study analysis",
+      "awarder": "Abbott",
       "date": "2023"
     },
     {
@@ -177,12 +208,18 @@
       "date": "2022"
     },
     {
+      "title": "NTU Bike Rally 100km (1st Runner Up)",
+      "awarder": "Nanyang Technological University Singapore",
+      "date": "2021"
+    },
+    {
       "title": "Sword of Honour",
       "awarder": "OCS Logistics Training Institute",
       "date": "2019"
     }
   ],
   "resume": "public/resume.pdf",
+  "transcript": "public/transcript.pdf",
   "contact": {
     "basedIn": "Singapore",
     "organization": "Nanyang Technological University",

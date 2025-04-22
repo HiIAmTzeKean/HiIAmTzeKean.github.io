@@ -16,7 +16,7 @@ const routes: Record<string, () => string | Promise<string>> = {
   projects: () => renderProjects(contentData.projects),
   education: () => renderEducation(contentData.education),
   achievements: () => renderAchievements(contentData.achievements),
-  resume: () => renderResume(contentData.resume),
+  resume: () => renderResume(contentData.resume, contentData.transcript),
   blog: async () => await renderBlogPosts(),
 };
 
