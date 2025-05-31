@@ -8,7 +8,8 @@
       "description": [
         "Predictive modelling of demand and supply of the energy market through bid ask simulation",
         "Battery Energy Storage Systems (BESS) simulation and analysis to drive new revenue stream",
-        "Feature engineering and time series analysis in python"
+        "Feature engineering and time series analysis in python to build ML and DNN models",
+        "Some data engineering work to build dagster pipeline for ETL purposes and some dashboard building on holistics to drive solar effort"
       ]
     },
     {
@@ -219,7 +220,20 @@
     }
   ],
   "resume": "public/resume.pdf",
-  "transcript": "public/transcript.pdf",
+  "transcript": [
+    {
+      "link": "public/ntu_transcript.pdf",
+      "name": "NTU Transcript"
+    },
+    {
+      "link": "public/nus_transcript.pdf",
+      "name": "NUS Transcript"
+    },
+    {
+      "link": "public/tsinghua_transcript.pdf",
+      "name": "Tsinghua Transcript"
+    }
+  ],
   "contact": {
     "basedIn": "Singapore",
     "organization": "Nanyang Technological University",
