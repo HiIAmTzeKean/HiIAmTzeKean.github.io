@@ -2,9 +2,18 @@
   "experiences": [
     {
       "company": "Flo Energy Pte Ltd",
+      "role": "Data Scientist",
+      "duration": "Jul 2024 - Present",
+      "supervisor": "Nils Trepstra, Head of Data and Analytics",
+      "description": [
+        "Predictive modelling of demand and supply of the energy market through bid ask simulation",
+      ]
+    },
+    {
+      "company": "Flo Energy Pte Ltd",
       "role": "Data Analytics",
-      "duration": "Dec 2024 - Present",
-      "supervisor": "Nils Trepstra, Data Team Lead",
+      "duration": "Dec 2024 - Jun 2024",
+      "supervisor": "Nils Trepstra, Head of Data and Analytics",
       "description": [
         "Predictive modelling of demand and supply of the energy market through bid ask simulation",
         "Battery Energy Storage Systems (BESS) simulation and analysis to drive new revenue stream",
