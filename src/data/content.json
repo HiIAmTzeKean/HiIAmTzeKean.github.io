@@ -7,6 +7,7 @@
       "supervisor": "Nils Trepstra, Head of Data and Analytics",
       "description": [
         "Predictive modelling of demand and supply of the energy market through bid ask simulation",
+        "Feature engineering and time series analysis in python to build ML and DNN models"
       ]
     },
     {
