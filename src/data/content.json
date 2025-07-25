@@ -91,7 +91,7 @@
     {
       "university": "Nanyang Technological University",
       "duration": "Aug. 2021 - Jul. 2025",
-      "gpa": "4.92 / 5.0 (First Class Honours)",
+      "gpa": "4.93 / 5.0 (Highest Distinction, First Class Honours)",
       "degree": "Bachelor in Computer Science",
       "specialisation": "Artificial Intelligence",
       "minor": "Business",
@@ -160,6 +160,11 @@
     },
     {
       "title": "Koh Boon Hwee Scholar Award",
+      "awarder": "Nanyang Technological University Singapore",
+      "date": "2025"
+    },
+    {
+      "title": "NTU Computer Science Dean List",
       "awarder": "Nanyang Technological University Singapore",
       "date": "2025"
     },
