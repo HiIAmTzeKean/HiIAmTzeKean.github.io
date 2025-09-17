@@ -16,6 +16,21 @@ export const renderAbout = (contentData: any): string => `
   </div>
 
   <!-- Personal Interests Section -->
+  <!-- News Section -->
+  <section class="mt-8 mb-8 p-6 bg-blue-50 rounded-lg shadow">
+    <h3 class="text-2xl font-semibold text-blue-900 mb-4">Latest News</h3>
+    <ul class="space-y-4">
+      ${(contentData.news || []).slice(0, 3).map((item: any) => `
+        <li class="border-b pb-4 last:border-b-0">
+          <div class="flex items-center justify-between">
+            <span class="text-sm text-gray-500">${new Date(item.date).toLocaleDateString()}</span>
+            <span class="font-bold text-blue-800">${item.title}</span>
+          </div>
+          <p class="mt-2 text-gray-700">${item.description}</p>
+        </li>
+      `).join('')}
+    </ul>
+  </section>
   <div class="mt-8">
     <h3 class="text-2xl font-semibold text-gray-800">Interests</h3>
     <ul class="list-disc pl-5 mt-4">
@@ -33,17 +48,18 @@ export const renderAbout = (contentData: any): string => `
 
     <!-- Email and Phone Above Icons -->
     <div class="mt-4 mb-8">
-      <p class="text-lg text-gray-700"><strong>Email:</strong> <a href="mailto:${contentData.email}" class="text-blue-600 hover:text-blue-800">${contentData.email}</a></p>
-      <p class="text-lg text-gray-700"><strong>Phone:</strong> <a href="tel:${contentData.phone}" class="text-blue-600 hover:text-blue-800">${contentData.phone}</a></p>
+      <p class="text-lg text-gray-700"><strong>Email:</strong> <a href="mailto:${contentData.contact.email}" class="text-blue-600 hover:text-blue-800">${contentData.contact.email}</a></p>
+      <p class="text-lg text-gray-700"><strong>Phone:</strong> <a href="tel:${contentData.contact.phone}" class="text-blue-600 hover:text-blue-800">${contentData.contact.phone}</a></p>
     </div>
 
     <!-- Social Media Icons -->
     <div class="flex space-x-6">
-      <a href="https://www.linkedin.com/in/${contentData.linkedin}" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin text-3xl"></i></a>
-      <a href="https://github.com/${contentData.github}" class="text-gray-800 hover:text-black"><i class="fab fa-github text-3xl"></i></a>
-      <a href="https://www.instagram.com/${contentData.instagram}" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram text-3xl"></i></a>
-      <a href="https://medium.com/@${contentData.medium}" class="text-gray-600 hover:text-gray-800"><i class="fab fa-medium text-3xl"></i></a>
-      <a href="https://t.me/${contentData.telegram}" class="text-blue-500 hover:text-blue-700"><i class="fab fa-telegram-plane text-3xl"></i></a>
+      <a href="https://www.linkedin.com/in/${contentData.contact.linkedin}" class="text-blue-600 hover:text-blue-800"><i class="fab fa-linkedin text-3xl"></i></a>
+      <a href="https://github.com/${contentData.contact.github}" class="text-gray-800 hover:text-black"><i class="fab fa-github text-3xl"></i></a>
+      <a href="https://www.instagram.com/${contentData.contact.instagram}" class="text-pink-600 hover:text-pink-800"><i class="fab fa-instagram text-3xl"></i></a>
+      <a href="https://medium.com/@${contentData.contact.medium}" class="text-gray-600 hover:text-gray-800"><i class="fab fa-medium text-3xl"></i></a>
+      <a href="https://t.me/${contentData.contact.telegram}" class="text-blue-500 hover:text-blue-700"><i class="fab fa-telegram-plane text-3xl"></i></a>
+      <a href="https://ttm.financial/personal/${contentData.contact.tiger_broker}/" class="text-yellow-600 hover:text-yellow-800" title="Tiger Broker"><i class="fas fa-money-bill-wave text-3xl"></i></a>
     </div>
   </div>
 </section>

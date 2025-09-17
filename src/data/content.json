@@ -73,6 +73,18 @@
       ]
     }
   ],
+  "news": [
+        {
+          "date": "2025-09-17",
+          "title": "Launched News Section!",
+          "description": "You can now see the latest updates about me right here. Stay tuned for more news!"
+        },
+        {
+          "date": "2025-06-01",
+          "title": "Started at Flo Energy",
+          "description": "Excited to join Flo Energy as a Data Scientist. Looking forward to new challenges!"
+    }
+    ],
   "projects": [
     {
       "name": "Streamsight",
@@ -256,6 +268,7 @@
     "linkedin": "ngtzekean",
     "instagram": "ngtzekean",
     "medium": "ngtzekean",
+    "tiger_broker": "4170831962112092",
     "telegram": "ngtzekean",
     "phone": "+6582288710",
     "email": "ngtzekean@gmail.com"
