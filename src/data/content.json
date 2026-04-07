@@ -2,24 +2,40 @@
   "experiences": [
     {
       "company": "Flo Energy Pte Ltd",
-      "role": "Data Scientist",
-      "duration": "Jul 2024 - Present",
+      "role": "Senior Data Scientist",
+      "duration": "Apr 2026 - Present",
       "supervisor": "Nils Trepstra, Head of Data and Analytics",
       "description": [
-        "Predictive modelling of demand and supply of the energy market through bid ask simulation",
-        "Feature engineering and time series analysis in python to build ML and DNN models"
+        "-"
+      ]
+    },
+    {
+      "company": "Flo Energy Pte Ltd",
+      "role": "Data Scientist",
+      "duration": "Jul 2025 - Mar 2026",
+      "supervisor": "Nils Trepstra, Head of Data and Analytics",
+      "description": [
+        "Handling of noisy, non-stationary and volatile nature of data to model volatility of energy system",
+        "Approximating data backfill from distribution profile",
+        "Energy load forecasting via statistical methods to construct most probable consumption pattern in various states of Australia. Some methods include quartile forecasting, long/short term time series modelling",
+        "Time series handling of PV solar data. Decomposition for detrending and effect removal to support forward forecast of PV load",
+        "Effect removal and smoothing algorithms to distribute load spikes for materialisation of negative/positive impact to PnL in a controlled manner",
+        "Robust optimization models for uncertain market prices and load, using defined uncertainty sets to support business decisions that reduce downside risk under adverse market conditions",
+        "Building PnL models for downstream users to formulate position to hedge against"
       ]
     },
     {
       "company": "Flo Energy Pte Ltd",
       "role": "Data Analytics",
-      "duration": "Dec 2024 - Jun 2024",
+      "duration": "Dec 2024 - Jun 2025",
       "supervisor": "Nils Trepstra, Head of Data and Analytics",
       "description": [
-        "Predictive modelling of demand and supply of the energy market through bid ask simulation",
-        "Battery Energy Storage Systems (BESS) simulation and analysis to drive new revenue stream",
-        "Feature engineering and time series analysis in python to build ML and DNN models",
-        "Some data engineering work to build dagster pipeline for ETL purposes and some dashboard building on holistics to drive solar effort"
+        "Predictive modelling of demand and supply of the SG energy market through bid ask simulation for spot price and day ahead forecast",
+        "Battery Energy Storage Systems (BESS) simulation and analysis of arbitrage opportunity to drive potential new revenue stream",
+        "Feature engineering and time series analysis in Python to build ML such as XGBoost and tree based models. Further exploration was also done to test feasibility of DNN models like LSTM and Attention networks to capture temporal and recurrence nature of data",
+        "Data engineering work using Dagster for ETL purposes to transform data pulled from API into data lake which is later then transformed into data cube",
+        "Orchestrated robust data flows from data lake to Snowflake warehouse, including schema design, incremental loading strategies for downstream usage of further modelling of energy demand and price",
+        "Python concurrent and parallel programming to optimise program compute time"
       ]
     },
     {
@@ -74,18 +90,24 @@
     }
   ],
   "news": [
-        {
-          "date": "2025-09-17",
-          "title": "Launched News Section!",
-          "description": "You can now see the latest updates about me right here. Stay tuned for more news!"
-        },
-        {
-          "date": "2025-06-01",
-          "title": "Started at Flo Energy",
-          "description": "Excited to join Flo Energy as a Data Scientist. Looking forward to new challenges!"
+    {
+      "date": "2026-04-01",
+      "title": "Got promoted!",
+      "description": "Starting my journey as a Senior Data Scientist!"
+    },
+    {
+      "date": "2025-06-01",
+      "title": "Started at Flo Energy",
+      "description": "Excited to join Flo Energy as a Data Scientist. Looking forward to new challenges!"
     }
-    ],
+  ],
   "projects": [
+    {
+      "name": "RecNextEval",
+      "description": "Continuation of Streamsight for publishing on SIGIR 2026",
+      "url": "https://github.com/HiIAmTzeKean/recnexteval",
+      "image": "public/recnexteval.png"
+    },
     {
       "name": "Streamsight",
       "description": "Streamsight: Offline evaluation toolkit for RS",
@@ -165,6 +187,16 @@
     }
   ],
   "achievements": [
+    {
+      "title": "Resource paper accepted for publication in SIGIR 2026, RecNextEval",
+      "awarder": "SIGIR 2026",
+      "date": "2026"
+    },
+    {
+      "title": "Promotion to Senior Data Scientist",
+      "awarder": "Flo Energy Pte Ltd",
+      "date": "2026"
+    },
     {
       "title": "CCDS Valedictorian Class of 2025",
       "awarder": "Nanyang Technological University Singapore",
