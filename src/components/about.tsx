@@ -11,7 +11,7 @@ export const renderAbout = (contentData: any): string => `
     />
     <div>
       <p class="text-xl text-gray-800 font-semibold">Hi! I'm Ng Tze Kean, a passionate Computer Science student specializing in AI and Business.</p>
-      <p class="text-lg text-gray-700 mt-4">I'm from Singapore, and I'm deeply passionate about technology, artificial intelligence, and business innovation. Currently, I am pursuing my undergraduate studies at Nanyang Technological University (NTU), where I specialize in AI with a minor in Business. I am excited about leveraging technology to solve real-world problems and making a positive impact on society.</p>
+      <p class="text-lg text-gray-700 mt-4">I'm from Singapore, and I'm deeply passionate about technology, artificial intelligence, and business innovation. I have completed my undergraduate studies at Nanyang Technological University (NTU), where I specialize in AI with a minor in Business. Always looking to leveraging technology to solve real-world problems and making a positive impact on society.</p>
     </div>
   </div>
 
