@@ -4,7 +4,7 @@
       "company": "Flo Energy Pte Ltd",
       "role": "Senior Data Scientist",
       "duration": "Apr 2026 - Present",
-      "supervisor": "Nils Trepstra, Head of Data and Analytics",
+      "supervisor": "Nils Terpstra, Head of Data and Analytics",
       "description": [
         "-"
       ]
@@ -13,7 +13,7 @@
       "company": "Flo Energy Pte Ltd",
       "role": "Data Scientist",
       "duration": "Jul 2025 - Mar 2026",
-      "supervisor": "Nils Trepstra, Head of Data and Analytics",
+      "supervisor": "Nils Terpstra, Head of Data and Analytics",
       "description": [
         "Handling of noisy, non-stationary and volatile nature of data to model volatility of energy system",
         "Approximating data backfill from distribution profile",
@@ -28,7 +28,7 @@
       "company": "Flo Energy Pte Ltd",
       "role": "Data Analytics",
       "duration": "Dec 2024 - Jun 2025",
-      "supervisor": "Nils Trepstra, Head of Data and Analytics",
+      "supervisor": "Nils Terpstra, Head of Data and Analytics",
       "description": [
         "Predictive modelling of demand and supply of the SG energy market through bid ask simulation for spot price and day ahead forecast",
         "Battery Energy Storage Systems (BESS) simulation and analysis of arbitrage opportunity to drive potential new revenue stream",
@@ -90,6 +90,11 @@
     }
   ],
   "news": [
+    {
+      "date": "2026-04-01",
+      "title": "SIGIR 2026 Paper Accepted!",
+      "description": "Paper accepted for publication in RecNextEval"
+    },
     {
       "date": "2026-04-01",
       "title": "Got promoted!",
